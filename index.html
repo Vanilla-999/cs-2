@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter Strike Hub</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #111; 
+            color: #fff; 
+            text-align: center; 
+            margin: 0;
+            padding: 0;
+        }
+        h1 { margin: 20px 0; }
+        .section { display: flex; justify-content: center; flex-wrap: wrap; margin: 20px 0; }
+        .card {
+            background: #222;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transition: transform 0.3s, box-shadow 0.3s; /* вот добавил */
+        }
+        .card:hover {
+            transform: translateY(-10px); /* при наведении поднимается */
+            box-shadow: 0 10px 20px rgba(255,69,0,0.5); /* чуть ярче тень */
+        }
+        .card img { width: 100%; border-radius: 5px; }
+        .card h3 { margin: 10px 0 5px 0; }
+        .card p { margin: 5px 0; }
+        .card button { 
+            padding: 10px 20px; 
+            margin-top: 10px; 
+            border: none; 
+            background: #ff4500; 
+            color: white; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            transition: background 0.3s; /* добавили плавную смену цвета */
+        }
+        .card button:hover {
+            background: #ff6347; /* цвет кнопки меняется при наведении */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Counter Strike Hub</h1>
+
+<div class="section">
+    <div class="card">
+        <img src="https://sun9-64.userapi.com/impg/ObjWPbnOQlhS4uQ5wgQSXYkteNlnBnKkM_4aVw/dcjPr4vuW2A.jpg?size=1147x715&quality=95&sign=ed96800bd8ef65680587748e06e921fc&type=album" alt="Agent 1">
+        <h3>Чёртов Майами</h3>
+        <p>Лидер «Профессионалов» дерзок, остроумен и пугающе безразличен к чужим страданиям.
+		Сам себя он описывает как обычного парня, который в выходные не прочь повеселиться в компании местных вооружённых коллекторов.
+		Он приуменьшает опасность даже в самой тяжёлой ситуации
+		— пускай в живых не осталось никого, кроме него, изрешечённого пулями, а на взрыв сейфа осталось лишь несколько секунд.
+		Увлёкшись эстетикой восьмидесятых, он начал носить белую хоккейную маску и цветочную рубашку.</p>
+        <button>Гайд</button>
+    </div>
+
+    <div class="card">
+        <img src="https://assets.lis-skins.com/blogfiles/QwwMBcztxmoUgsneI2d6ay2iWz2FxyMVdGUiJuJe.png" alt="Weapon 1">
+        <h3>AK-47 Case Hardened</h3>
+        <p>Мощная и надежная штурмовая винтовка АК-47
+		— одна из самых известных в мире.
+		Наиболее смертельна стрельба короткими и точными очередями.</p>
+        <button>Подробнее</button>
+    </div>
+
+    <div class="card">
+        <img src="https://storage.yandexcloud.net/s3-metaratings-storage/upload/sprint.editor/1a6/1a68bf58b10c112db53fc2d1a43643da.jpg" alt="Map 1">
+        <h3>Mirage</h3>
+        <p>Действие карты происходит на Ближнем Востоке, предположительно в Ираке.
+Террористы с помощью взрывоопасных ракет (Точка А)
+ хотят подорвать посольство, либо подорвать тайник с оружием (Точка Б),
+ чтобы захватить власть над городом.
+ Спецназ обязан помешать им.</p>
+        <button>Советы</button>
+    </div>
+</div>
+
+</body>
+</html>
